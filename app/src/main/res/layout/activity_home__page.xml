@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_Page"
+    android:background="#030323"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#215A9F"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="0.5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_img"
+            android:layout_width="48dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:outlineSpotShadowColor="#215A9F"
+            android:layout_margin="5dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#121945"
+            app:civ_border_width="1dp"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="149dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Devices"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="3dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:background="#215A9F" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/device_rv"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"></androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Device"
+        android:background="@drawable/loginbtn_design"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:padding="1dp"
+        android:layout_margin="15dp"
+        />
+
+</LinearLayout>
